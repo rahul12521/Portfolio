@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rahul Sai Sudeer Vadala | Data Engineer & Analyst</title>
+<meta name="description" content="Rahul Sai Sudeer Vadala: data engineer and analyst working with healthcare data in SQL and Python.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F5F8F7; --ink:#18282C; --muted:#4A5C60; --line:#CFDAD7;
+  --teal:#1F6F61; --teal-soft:#E3EFEC;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans:"Public Sans", "Segoe UI", system-ui, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--sans)}
+a{color:var(--teal);text-underline-offset:3px}
+a:hover{color:var(--ink)}
+a:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:2px}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+header{padding:56px 0 24px}
+.name{font:700 clamp(2.2rem,5vw,3.4rem)/1.1 var(--serif);margin:0;letter-spacing:-0.01em}
+.role{margin:10px 0 18px;font-size:1.15rem;color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:10px 22px;font-weight:600}
+.links a{display:inline-block;padding:6px 0;min-height:44px;line-height:32px}
+
+/* hero: the pipeline he runs every day */
+.flow{margin:40px 0 8px;border:1px solid var(--line);background:#fff;border-radius:6px;padding:28px 24px}
+.flow p{margin:0 0 20px;max-width:62ch;font-size:1.05rem}
+.stages{display:grid;grid-template-columns:repeat(4,1fr);gap:0;align-items:stretch}
+.stage{padding:14px 16px;border-top:4px solid var(--teal);background:var(--teal-soft);position:relative}
+.stage+.stage{margin-left:18px}
+.stage+.stage::before{content:"";position:absolute;left:-18px;top:50%;width:18px;border-top:2px dashed var(--teal)}
+.stage strong{display:block;font-weight:600}
+.stage span{font-size:.92rem;color:var(--muted)}
+.facts{display:flex;flex-wrap:wrap;gap:8px 32px;margin-top:20px;font-size:.98rem}
+.facts b{font:700 1.5rem/1 var(--serif);color:var(--teal);margin-right:6px}
+
+section{padding:44px 0 8px}
+h2{font:700 1.7rem/1.2 var(--serif);margin:0 0 20px}
+h3{font:600 1.08rem/1.35 var(--sans);margin:0}
+.job{display:grid;grid-template-columns:220px 1fr;gap:8px 32px;padding:20px 0;border-top:1px solid var(--line)}
+.job .meta{color:var(--muted);font-size:.95rem}
+.job ul{margin:8px 0 0;padding-left:20px}
+.job li{margin:6px 0;max-width:72ch}
+
+.work{display:grid;gap:0}
+.item{display:grid;grid-template-columns:220px 1fr;gap:6px 32px;padding:18px 0;border-top:1px solid var(--line)}
+.item p{margin:0;max-width:68ch}
+.tag{color:var(--muted);font-size:.92rem;margin-top:4px}
+
+.skills{display:grid;grid-template-columns:220px 1fr;gap:10px 32px}
+.skills dt{font-weight:600}
+.skills dd{margin:0;color:var(--ink)}
+
+footer{margin:56px 0 0;padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+
+@media (max-width:760px){
+  body{font-size:16px}
+  .stages{grid-template-columns:1fr}
+  .stage+.stage{margin-left:0;margin-top:14px}
+  .stage+.stage::before{left:24px;top:-14px;width:0;height:14px;border-top:0;border-left:2px dashed var(--teal)}
+  .job,.item,.skills{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1 class="name">Rahul Sai Sudeer Vadala</h1>
+  <p class="role">Data engineer and analyst working with healthcare data in SQL and Python. Based in Farmington, Michigan.</p>
+  <nav class="links" aria-label="Contact and profiles">
+    <a href="mailto:rahulsaisudeer.vadala@gmail.com">rahulsaisudeer.vadala@gmail.com</a>
+    <a href="https://www.linkedin.com/in/REPLACE-WITH-PROFILE">LinkedIn</a>
+    <a href="#work">Selected work</a>
+    <a href="#experience">Experience</a>
+  </nav>
+</header>
+
+<div class="flow" role="region" aria-label="What I work on">
+  <p>Most days I take raw client data, clean and validate it, model it in SQL, and turn it into dashboards that teams use to make decisions.</p>
+  <div class="stages">
+    <div class="stage"><strong>Raw sources</strong><span>Client files, Salesforce, XML exports</span></div>
+    <div class="stage"><strong>Clean and validate</strong><span>Python, Alteryx, reconciliation checks</span></div>
+    <div class="stage"><strong>Model</strong><span>SQL Server views and stored procedures</span></div>
+    <div class="stage"><strong>Report</strong><span>QuickSight, Power BI, Amazon Q</span></div>
+  </div>
+  <div class="facts">
+    <span><b>2M+</b>healthcare records a month</span>
+    <span><b>0</b>pipeline failures so far</span>
+    <span><b>30–40 → 3–5 min</b>report run time</span>
+  </div>
+</div>
+
+<section id="work" aria-labelledby="work-h">
+  <h2 id="work-h">Selected work</h2>
+  <div class="work">
+    <div class="item"><h3>No-show analysis</h3><div><p>Studied appointment no-show patterns and suggested a 24–36 hour cancellation policy with a $25 fee. It helped drive about 35% year-over-year revenue growth for the client.</p><div class="tag">SQL, AWS QuickSight</div></div></div>
+    <div class="item"><h3>Provider-matching algorithm</h3><div><p>Matched patients to nearby practitioners with open slots using radius-based ZIP-code and latitude/longitude logic, tested over several rounds until the results were right. Unbooked appointments dropped across multiple facilities.</p><div class="tag">SQL, geospatial logic, QuickSight</div></div></div>
+    <div class="item"><h3>Receivables roll-forward</h3><div><p>Replaced a manual Excel process with a monthly view (Beginning + Charges − Payments − Adjustments = Ending) using the LAG() window function, and fixed a calculation error that had been misstating aging reports.</p><div class="tag">SQL Server, window functions</div></div></div>
+    <div class="item"><h3>Care-gap outreach list</h3><div><p>Flagged every patient who missed required vaccines and follow-up doses with SQL rules, so clinics knew exactly who to contact.</p><div class="tag">SQL, healthcare data, HIPAA</div></div></div>
+    <div class="item"><h3>Self-service AI assistant</h3><div><p>Rolled out Amazon Q in QuickSight so clients can ask questions about their data in plain English instead of emailing the team.</p><div class="tag">Amazon Q, QuickSight</div></div></div>
+    <div class="item"><h3>Visual speech recognition</h3><div><p>Trained a 3D CNN + RNN model that reads speech from lip movements, reaching above 90% sentence-level accuracy, and scripted the labeling of 10,000 video samples so a weeks-long job ran overnight.</p><div class="tag">Python, TensorFlow, FFmpeg, OpenCV</div></div></div>
+    <div class="item"><h3>Climate data dashboards</h3><div><p>Combined 23 datasets with conflicting schemas into one GCP Cloud Storage layer and launched 11 SQL-driven Power BI dashboards with scheduled refresh.</p><div class="tag">GCP, Power Query, Power BI</div></div></div>
+  </div>
+</section>
+
+<section id="experience" aria-labelledby="exp-h">
+  <h2 id="exp-h">Experience</h2>
+  <div class="job">
+    <div><h3>Data Analyst</h3><div class="meta">eSimplify Solutions<br>Farmington, MI · May 2024 – present</div></div>
+    <ul>
+      <li>Maintain ETL/ELT pipelines in Python, SQL Server, and Alteryx that load 2M+ healthcare and financial records a month with zero failures so far.</li>
+      <li>Design reusable SQL data models across appointments, claims, billing, and receivables.</li>
+      <li>Standardized claims reporting across two teams after tracing a recurring count mismatch to conflicting logic.</li>
+      <li>Protect patient data with row-level security and check every release against source data.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div><h3>Data Scientist</h3><div class="meta">International Center for Emerging Technologies<br>Tamil Nadu, India · Jan 2022 – May 2023</div></div>
+    <ul>
+      <li>Migrated legacy SQL and Python ETL to GCP BigQuery using dbt Core and Dataform.</li>
+      <li>Trained a CNN + LSTM gesture recognition model for deaf and mute users that reached 93% accuracy.</li>
+      <li>Shipped test-driven Python modules that two other research tools reuse, and wrote guides that cut onboarding from weeks to days.</li>
+    </ul>
+  </div>
+</section>
+
+<section aria-labelledby="skills-h">
+  <h2 id="skills-h">Skills</h2>
+  <dl class="skills">
+    <dt>Languages</dt><dd>SQL, Python, R</dd>
+    <dt>Data engineering</dt><dd>ETL/ELT, data modeling, dbt Core, Dataform, Alteryx, Airflow (Cloud Composer), PySpark (academic)</dd>
+    <dt>Databases and cloud</dt><dd>SQL Server, MySQL, NoSQL, GCP BigQuery, AWS (S3, SQS, QuickSight), Snowflake (working experience)</dd>
+    <dt>Analytics and BI</dt><dd>AWS QuickSight, Power BI, Tableau, Excel, statistical process control, clustering, forecasting</dd>
+    <dt>Healthcare</dt><dd>Claims, appointments, immunization, billing and receivables data; HIPAA; row-level security</dd>
+  </dl>
+</section>
+
+<section aria-labelledby="edu-h">
+  <h2 id="edu-h">Education</h2>
+  <div class="job">
+    <div><h3>M.S., Data Science</h3><div class="meta">2023 – 2025</div></div>
+    <div>University of Michigan–Dearborn · GPA 3.87</div>
+  </div>
+  <div class="job">
+    <div><h3>B.Tech, Computer Science</h3><div class="meta">2019 – 2023</div></div>
+    <div>SRIHER · GPA 3.53</div>
+  </div>
+</section>
+
+<footer>
+  <p>Open to data engineer, data analyst, and BI roles. Reach me at <a href="mailto:rahulsaisudeer.vadala@gmail.com">rahulsaisudeer.vadala@gmail.com</a>.</p>
+  <p>Certifications: AWS QuickSight, Amazon SQS.</p>
+</footer>
+</div>
+</body>
+</html>
